@@ -1,7 +1,3 @@
-/* Modify the background color */
-.navbar-bg {
+.custom-navbar-bg {
   background-color: #272626;
-}
-.navbar li a {
-  color: #a0a0a0;
 }
