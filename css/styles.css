@@ -20,11 +20,8 @@ i {
 .featured-img  {
   background-size: cover;
   height: 450px;
-  background: url(../img/featuredImage-01.jpg) no-repeat top;
+  /* background: url(../img/featuredImage-01.jpg) no-repeat top; */
+  background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,1));
 }
   
- 
-  
-  
-  /* background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,1)); */
-}
+
