@@ -27,16 +27,24 @@
     <style>
       body {
         font-family: "Montserrat", sans-serif;
-        background-color: #403e3e;
+        background: rgb(89, 2, 43);
+        background: linear-gradient(
+          0deg,
+          rgba(89, 2, 43, 1) 0%,
+          rgba(140, 4, 79, 1) 35%,
+          rgba(191, 4, 126, 1) 100%
+        );
       }
     </style>
   </head>
-  <body class="">
+  <body>
     <div class="container-fluid">
       <div class="row flex-nowrap">
-        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 custom-navbar-bg">
+        <div
+          class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 py-5 custom-navbar-bg"
+        >
           <div
-            class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100"
+            class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 min-vh-100 sticky-top"
           >
             <!-- Start Menu 1 -->
             <a
@@ -239,26 +247,96 @@
         </div> -->
 
         <!--Container Main start-->
+
         <!-- Hero Start -->
         <div
-          class="container-fluid col-xxl-8 col-lg-8 col-md-8 col-sm-8 px-4 py-5 featured-img"
+          class="container-fluid col-xxl-8 col-lg-8 col-md-8 col-sm-8 px-4 py-5"
         >
-          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-              <img
+          <!-- navbar top -->
+          <div class="row">
+            <div class="col">
+              <nav
+                class="navbar navbar-expand-sm navbar-dark custom-navbar-bg fixed-top"
+                role="navigation"
+              >
+                <div class="container">
+                  <a class="navbar-brand" style="float: left" href="#">
+                    <img
+                      src="img/leftyRecords.svg"
+                      alt=""
+                      width="30"
+                      height="24"
+                      class="d-inline-block align-text-top"
+                    />
+                    LeftyRecords
+                  </a>
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                  >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                          >Explore</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Artists</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                      />
+                      <button class="btn btn-outline-secondary" type="submit">
+                        Search
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <!-- end navbar top -->
+          <div
+            class="row flex-lg-row-reverse align-items-center g-5 my-1 py-1 bg-secondary featured-img mt-5"
+          >
+            <div class="col-10 col-sm-8 col-lg-6 my-auto">
+              <!-- <img
                 src="img/musician-01.jpg"
                 class="d-block mx-lg-auto img-fluid"
                 alt="Author of Silence"
-                width="500"
-                height="500"
+                width="350"
+                height="350"
                 loading="lazy"
-              />
+              /> -->
             </div>
-            <div class="col-lg-6">
-              <span class="music-tags">Electronic</span>
-              <span class="music-tags">Industrial</span>
-              <h1 class="display-5 fw-bold lh-1 mb-3">Author of Silence</h1>
-              <p class="lead">
+            <div class="col-lg-6 my-auto mx-auto p-5">
+              <span class="music-tags text-secondary text-secondary"
+                >Electronic</span
+              >
+              <span class="music-tags text-secondary">Industrial</span>
+              <h1 class="display-5 fw-bold lh-1 mb-3 text-white">
+                Author of Silence
+              </h1>
+              <p class="lead text-white">
                 The most anticipated release of the year from Los Angeles native
                 Author of Silence featuring Thom Yorke, Trent Reznor, Roger
                 Waters, and more.
@@ -268,7 +346,8 @@
               >
                 <button
                   type="button"
-                  class="btn btn-primary btn-lg px-4 me-md-2"
+                  class="btn btn-lg px-4 me-md-2 testing-button text-white"
+                  style="background-color: #d904a0"
                 >
                   Listen
                 </button>
@@ -286,9 +365,9 @@
           </div>
           <!-- End Hero -->
           <!-- New Releases Start -->
-          <div class="row">
+          <div class="row pt-3">
             <div class="col">
-              <h3>New Releases</h3>
+              <h3 class="text-white">New Releases</h3>
             </div>
           </div>
           <div class="row gx-30 justify-content-center mt-2">
@@ -304,19 +383,57 @@
             </div>
           </div> -->
               <!-- End Card End-->
-              One of six columns
+              <img
+                src="../img/henrik-donnestad-t2Sai-AqIpI-unsplash.jpeg"
+                class="img-thumbnail m-2"
+                alt=""
+              />
             </div>
-            <div class="col-lg-2 col-md-6">One of six columns</div>
-            <div class="col-lg-2 col-md-6">One of six columns</div>
-            <div class="col-lg-2 col-md-6">One of six columns</div>
-            <div class="col-lg-2 col-md-6">One of six columns</div>
-            <div class="col-lg-2 col-md-6">One of six columns</div>
+            <div class="col-lg-2 col-md-6">
+              <div>
+                <img
+                  src="../img/henrik-donnestad-t2Sai-AqIpI-unsplash.jpeg"
+                  class="img-thumbnail m-2"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <div>
+                <img
+                  src="../img/henrik-donnestad-t2Sai-AqIpI-unsplash.jpeg"
+                  class="img-thumbnail m-2"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <img
+                src="../img/henrik-donnestad-t2Sai-AqIpI-unsplash.jpeg"
+                class="img-thumbnail m-2"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <img
+                src="../img/henrik-donnestad-t2Sai-AqIpI-unsplash.jpeg"
+                class="img-thumbnail m-2"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <img
+                src="../img/henrik-donnestad-t2Sai-AqIpI-unsplash.jpeg"
+                class="img-thumbnail m-2"
+                alt=""
+              />
+            </div>
           </div>
           <!-- End New Releases -->
           <!-- New Releases Start -->
           <div class="row">
             <div class="col mt-4">
-              <h3>Popular Artists</h3>
+              <h3 class="text-white">Popular Artists</h3>
             </div>
           </div>
           <div class="row gx-30 justify-content-center mt-2">
@@ -331,7 +448,7 @@
           <!-- News Start -->
           <div class="row">
             <div class="col-6 mt-4">
-              <h3>Popular Singles</h3>
+              <h3 class="text-white">Popular Singles</h3>
             </div>
             <div class="col-6 mt-4">
               <h3>Recommended</h3>
