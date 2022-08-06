@@ -1,5 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
+  height: 100%;
   /* background-color: #403e3e; */
 }
 .custom-navbar-bg {
@@ -31,3 +32,12 @@ i {
   background-color: #d904a0 !important;
   border: none;
 } */
+#ft-art.img-thumbnail {
+  background: none;
+  border: none;
+  border-radius: 25px;
+}
+.maintxt {
+  background-image: url(../img/featuredImage-04.jpg);
+  background-size: cover;
+}
