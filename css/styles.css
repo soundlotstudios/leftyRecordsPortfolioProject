@@ -85,7 +85,6 @@ i {
   transition: opacity 0.25s;
   backdrop-filter: blur(5px);
 }
-
 .image__overlay > * {
   transform: translateY(20px);
   transition: transform 0.25s;
@@ -96,11 +95,19 @@ i {
 .image__overlay:hover > * {
   transform: translateY(0);
 }
-.image__title {
+.image__icon {
   font-size: 2em;
   font-weight: bold;
+  text-align: center;
+  /* margin: auto; */
 }
 .image__description {
   font-size: 1.25em;
   margin-top: 0.25em;
 }
+.music_description {
+  margin-left: 6px;
+}
+/* .image__overlay:hover ~ .music_description {
+  display: none;
+} */
